@@ -22,11 +22,11 @@
       data-sap-ui-preload="async"
       data-sap-ui-theme="sap_horizon"
       data-sap-ui-frameOptions="allow"
+	  data-sap-ui-onInit="module:app/index"
+	  data-sap-ui-resourceroots='{
+		"test": "./"
+	}'
     ></script>
-	<script>
-		sap.ui.getCore().attachInit(()=> sap.ushell.Container.createRenderer().placeAt("content"))
-	</script>
-
 </head>
 <body class="sapUiBody" id="content"></body>
 </html>
